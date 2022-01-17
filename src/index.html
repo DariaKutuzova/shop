@@ -13,26 +13,29 @@
     <header>
 
     </header>
-    <main>
-        <h1 class="header-description">Добавление товара</h1>
-        <div class="content">
+    <main class="main">
+        <h1 class="header-description page__item">Добавление товара</h1>
+        <div class="content page__item">
             <aside class="sidebar">
                 <form action="#" class="add-form" name="add-form">
-                    <h2 class="add-form__header">Наименование товара</h2>
+                    <h2 class="add-form__header" id="add-form__header-name">Наименование товара
+                    <label for="add-form__header-name"><span class="add-form__header-circle"></span></label></h2>
                     <input type="text" placeholder="Введите наименование товара"
                            class="add-form__input add-form__input_value_name" id="name-input" name="name" minlength="2"
                            maxlength="40" required>
                     <span id="name-input-error" class="add-form__input-error"></span>
                     <h2 class="add-form__header">Описание товара</h2>
                     <textarea placeholder="Введите описание товара"
-                              class="add-form__input add-form__input_value_description" id="description-input"
+                              class="add-form__textarea add-form__input_value_description" id="description-textarea"
                               name="description" minlength="2" maxlength="100"></textarea>
-                    <span id="description-input-error" class="add-form__input-error"></span>
-                    <h2 class="add-form__header">Ссылка на изображение товара</h2>
+                    <span id="description-textarea-error" class="add-form__textarea-error"></span>
+                    <h2 class="add-form__header" id="add-form__header-link">Ссылка на изображение товара
+                    <label for="add-form__header-link"><span class="add-form__header-circle"></span></label></h2>
                     <input type="url" placeholder="Введите ссылку" class="add-form__input add-form__input_value_link"
                            id="link-input" name="link" required>
                     <span id="link-input-error" class="add-form__input-error"></span>
-                    <h2 class="add-form__header">Цена товара</h2>
+                    <h2 class="add-form__header">Цена товара
+                    <label for="add-form__header-price" id="add-form__header-price"><span class="add-form__header-circle"></span></label></h2>
                     <input type="url" placeholder="Введите цену" class="add-form__input add-form__input_value_price"
                            id="price-input" name="link" required>
                     <span id="price-input-error" class="add-form__input-error"></span>

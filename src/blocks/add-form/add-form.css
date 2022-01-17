@@ -1,0 +1,15 @@
+.add-form {
+    display: flex;
+    flex-direction: column;
+    width: 332px;
+    min-height: 440px;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: #49485E;
+    background-color: rgba(255, 254, 251, 1);
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: 0  20px 30px rgba(0, 0, 0, 0.04), 0  6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+}
