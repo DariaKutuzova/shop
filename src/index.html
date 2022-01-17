@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+
+<body>
+<div class="page">
+    <header class="header page__item">
+        <h1 class="header">Добавление товара</h1>
+
+    </header>
+    <main>
+        <div class="content">
+            <aside class="sidebar">
+                <form action="#" class="add-form" name="add-form">
+                    <h2 class="add-form__header">Наименование товара</h2>
+                    <input type="text" placeholder="Введите наименование товара"
+                           class="add-form__input add-form__input_value_name" id="name-input" name="name" minlength="2"
+                           maxlength="40" required>
+                    <span id="name-input-error" class="add-form__input-error"></span>
+                    <h2 class="add-form__header">Описание товара</h2>
+                    <textarea placeholder="Введите описание товара"
+                              class="add-form__input add-form__input_value_description" id="description-input"
+                              name="description" minlength="2" maxlength="100"></textarea>
+                    <span id="description-input-error" class="add-form__input-error"></span>
+                    <h2 class="add-form__header">Ссылка на изображение товара</h2>
+                    <input type="url" placeholder="Введите ссылку" class="add-form__input add-form__input_value_link"
+                           id="link-input" name="link" required>
+                    <span id="link-input-error" class="add-form__input-error"></span>
+                    <h2 class="add-form__header">Цена товара</h2>
+                    <input type="url" placeholder="Введите цену" class="add-form__input add-form__input_value_price"
+                           id="price-input" name="link" required>
+                    <span id="price-input-error" class="add-form__input-error"></span>
+                    <button class="add-form__button" type="submit">Добавить товар</button>
+                </form>
+            </aside>
+            <section class="elements page__item" aria-label="Фотогалерея">
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="#" alt="#" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__description"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+            </section>
+            <div class="popup popup_type_confirm">
+                <div class="popup__container popup__container_type_confirm">
+                    <form action="#" class="popup__form popup__form_type_confirm" name="confirm-form">
+                        <h2 class="popup__form-header">Вы уверены?</h2>
+                        <button class="popup__button popup__button_type_confirm" type="submit">Да</button>
+                    </form>
+                    <button class="popup__close popup__close_type_confirm" type="button" aria-label="Закрыть"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer page__item">
+    </footer>
+</div>
+<template id="card-template">
+    <article class="element">
+        <img src="#" alt="#" class="element__image">
+        <div class="element__caption">
+            <h2 class="element__description"></h2>
+            <div class="element__likes">
+                <button class="element__like" type="button" aria-label="Нравится"></button>
+                <span class="element__number-of-likes">0</span>
+            </div>
+        </div>
+        <button class="element__trash" type="button" aria-label="Удалить"></button>
+    </article>
+</template>
+</body>
+
+</html>
