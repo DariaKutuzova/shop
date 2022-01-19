@@ -1,6 +1,8 @@
-.popup__input-error {
+.add-form__input-error {
+  margin-top: 10px;
+  margin-bottom: -10px;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 0;
   letter-spacing: -0.02em;
   color: #FF8484;
   visibility: hidden;
