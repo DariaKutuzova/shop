@@ -10,29 +10,54 @@
 
 <body>
 <div class="page">
-    <header class="header page__item">
-        <h1 class="header">Добавление товара</h1>
+    <header>
 
     </header>
-    <main>
-        <div class="content">
+    <main class="main">
+        <div class="main-header">
+        <h1 class="main-header__description page__item">Добавление товара</h1>
+        <button class="main-header__sort-button">
+            По умолчанию
+            <svg class="main-header__arrow" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_17_9)">
+                    <path d="M11.4853 1.24264L8.24268 4.48528L5.00003 1.24264" stroke="#B4B4B4"/>
+                </g>
+                <defs>
+                    <filter id="filter0_d_17_9" x="0.646484" y="0.889038" width="15.1924" height="12.3033" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_9"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_9" result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+        </button>
+        </div>
+        <div class="content page__item">
             <aside class="sidebar">
                 <form action="#" class="add-form" name="add-form">
-                    <h2 class="add-form__header">Наименование товара</h2>
+                    <h2 class="add-form__header" id="add-form__header-name">Наименование товара
+                    <label for="add-form__header-name"><span class="add-form__header-circle"></span></label></h2>
                     <input type="text" placeholder="Введите наименование товара"
                            class="add-form__input add-form__input_value_name" id="name-input" name="name" minlength="2"
                            maxlength="40" required>
                     <span id="name-input-error" class="add-form__input-error"></span>
                     <h2 class="add-form__header">Описание товара</h2>
                     <textarea placeholder="Введите описание товара"
-                              class="add-form__input add-form__input_value_description" id="description-input"
+                              class="add-form__textarea add-form__input_value_description" id="description-textarea"
                               name="description" minlength="2" maxlength="100"></textarea>
-                    <span id="description-input-error" class="add-form__input-error"></span>
-                    <h2 class="add-form__header">Ссылка на изображение товара</h2>
+                    <span id="description-textarea-error" class="add-form__textarea-error"></span>
+                    <h2 class="add-form__header" id="add-form__header-link">Ссылка на изображение товара
+                    <label for="add-form__header-link"><span class="add-form__header-circle"></span></label></h2>
                     <input type="url" placeholder="Введите ссылку" class="add-form__input add-form__input_value_link"
                            id="link-input" name="link" required>
                     <span id="link-input-error" class="add-form__input-error"></span>
-                    <h2 class="add-form__header">Цена товара</h2>
+                    <h2 class="add-form__header">Цена товара
+                    <label for="add-form__header-price" id="add-form__header-price"><span class="add-form__header-circle"></span></label></h2>
                     <input type="url" placeholder="Введите цену" class="add-form__input add-form__input_value_price"
                            id="price-input" name="link" required>
                     <span id="price-input-error" class="add-form__input-error"></span>
@@ -41,9 +66,18 @@
             </aside>
             <section class="elements page__item" aria-label="Фотогалерея">
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/Rectangle.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header">Наименование товара</h2>
+                        <p class="element__description">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                        <p class="element__price">10 000 руб.</p>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="<%=require('./images/Rectangle.jpg')%>" alt="фото товара" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -52,9 +86,9 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/Rectangle.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -63,9 +97,9 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -74,9 +108,9 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -85,9 +119,9 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -96,9 +130,9 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -107,9 +141,9 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -118,9 +152,31 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
                 <article class="element">
-                    <img src="#" alt="#" class="element__image">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
                     <div class="element__caption">
-                        <h2 class="element__description"></h2>
+                        <h2 class="element__header"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__header"></h2>
+                        <div class="element__likes">
+                            <button class="element__like" type="button" aria-label="Нравится"></button>
+                            <span class="element__number-of-likes">0</span>
+                        </div>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="Удалить"></button>
+                </article>
+                <article class="element">
+                    <img src="<%=require('./images/b8bcfafe.jpg')%>" alt="фото товара" class="element__image">
+                    <div class="element__caption">
+                        <h2 class="element__header"></h2>
                         <div class="element__likes">
                             <button class="element__like" type="button" aria-label="Нравится"></button>
                             <span class="element__number-of-likes">0</span>
@@ -129,15 +185,6 @@
                     <button class="element__trash" type="button" aria-label="Удалить"></button>
                 </article>
             </section>
-            <div class="popup popup_type_confirm">
-                <div class="popup__container popup__container_type_confirm">
-                    <form action="#" class="popup__form popup__form_type_confirm" name="confirm-form">
-                        <h2 class="popup__form-header">Вы уверены?</h2>
-                        <button class="popup__button popup__button_type_confirm" type="submit">Да</button>
-                    </form>
-                    <button class="popup__close popup__close_type_confirm" type="button" aria-label="Закрыть"></button>
-                </div>
-            </div>
         </div>
     </main>
     <footer class="footer page__item">
@@ -147,7 +194,7 @@
     <article class="element">
         <img src="#" alt="#" class="element__image">
         <div class="element__caption">
-            <h2 class="element__description"></h2>
+            <h2 class="element__header"></h2>
             <div class="element__likes">
                 <button class="element__like" type="button" aria-label="Нравится"></button>
                 <span class="element__number-of-likes">0</span>

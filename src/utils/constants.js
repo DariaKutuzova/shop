@@ -1,6 +1,6 @@
 // Объявляем переменные
-export const buttonChangeProfile = document.querySelector('.profile__edit-button');
-export const buttonAddPlace = document.querySelector('.profile__add-button');
+export const buttonChangeProfile = document.querySelector('.profile__edit-__button');
+export const buttonAddPlace = document.querySelector('.profile__add-__button');
 export const buttonChangeAvatar = document.querySelector('.profile__avatar-edit');
 export const buttonDeleteImage = document.querySelector('.element__trash');
 export const formChangeProfile = document.querySelector('.popup__form_type_prifile');

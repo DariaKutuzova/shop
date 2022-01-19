@@ -35,7 +35,7 @@ export default class Card {
         // Добавим данные
         this._cardImage.src = this._data.link;
         this._cardImage.alt = this._data.name;
-        this._element.querySelector('.element__description').textContent = this._data.name;
+        this._element.querySelector('.element__header').textContent = this._data.name;
         this._likeCounter.textContent = this._likes;
         this._checkLikeState();
         this._checkOwner();

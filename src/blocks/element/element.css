@@ -2,7 +2,14 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  max-width: 282px;
-  min-height: 361px;
+  /*max-width: 332px;*/
+  min-height: 423px;
   position: relative;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.element:hover {
+  opacity: 0.7;
 }
