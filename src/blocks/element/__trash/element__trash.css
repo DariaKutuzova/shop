@@ -1,0 +1,22 @@
+.element__trash {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 32px;
+  height: 32px;
+  background: center / 16px 16px url(../../../images/delete.svg) no-repeat,
+  #FF8484;
+  background-size: 16px 16px, auto, 16px;
+  align-self: center;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.element__trash:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+.add-form__textarea {
+    background: #FFFEFB;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px 16px 0;
+    border: none;
+    resize: none;
+    min-height: 108px;
+    outline: none;
+}
+
+.add-form__textarea::placeholder {
+    color: rgba(180, 180, 180, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}

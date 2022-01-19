@@ -1,0 +1,23 @@
+.main-header__sort-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 130px;
+    min-height: 36px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #B4B4B4;
+    background: #FFFEFB;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    border: 0;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .main-header__sort-button {
+        font-size: 9px;
+        line-height: 11px;
+    }
+}
