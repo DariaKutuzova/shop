@@ -19,3 +19,10 @@
 .element:hover .element__trash{
   opacity: 1;
 }
+
+
+@media screen and (max-width: 600px) {
+  .element {
+    min-height: 300px;
+  }
+}

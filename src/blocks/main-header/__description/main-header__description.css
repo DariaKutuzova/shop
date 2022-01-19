@@ -10,3 +10,17 @@
     margin: 0;
 
 }
+
+@media screen and (max-width: 600px) {
+    .main-header__description {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-header__description {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}

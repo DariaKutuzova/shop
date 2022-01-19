@@ -20,3 +20,9 @@
 .add-form__button:hover {
     opacity: 0.8;
 }
+
+@media screen and (max-width: 600px) {
+    .add-form__button {
+        max-width: 100%;
+    }
+}

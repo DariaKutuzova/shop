@@ -14,3 +14,10 @@
     padding: 0 16px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .main-header__sort-button {
+        font-size: 9px;
+        line-height: 11px;
+    }
+}
