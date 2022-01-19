@@ -5,6 +5,8 @@
     border-radius: 4px;
     text-indent: 16px;
     border: 1px solid transparent;
+    outline: none;
+    padding-right: 16px;
 }
 
 .add-form__input::placeholder {

@@ -10,6 +10,7 @@
 @import url(../blocks/element/__price/element__price.css);
 @import url(../blocks/element/__trash/element__trash.css);
 @import url(../blocks/element/__header/element__header.css);
+@import url(../blocks/element/__cover/element__cover.css);
 @import url(../blocks/add-form/__input-error/add-form__input-error.css);
 @import url(../blocks/add-form/__input/_type/add-form__input_type_error.css);
 @import url(../blocks/main/main.css);
@@ -26,6 +27,7 @@
 @import url(../blocks/add-form/__button/_active/add-form__button_active.css);
 @import url(../blocks/add-form/__header-circle/add-form__header-circle.css);
 @import url(../blocks/add-form/__input-error/_active/add-form__input-error_active.css);
+@import url(../blocks/sidebar/sidebar.css);
 
 
 

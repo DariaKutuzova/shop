@@ -21,4 +21,9 @@ initialCards.forEach((card) => {
     addCard(card);
 })
 
+//Отрисовка корзины при наведении на карточку
+
+
+
+
 

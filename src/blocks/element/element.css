@@ -7,9 +7,22 @@
   position: relative;
   opacity: 1;
   cursor: pointer;
-  transition: opacity 0.2s linear;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+
 }
 
-.element:hover {
-  opacity: 0.7;
+/*.element:hover {*/
+/*  transform: scale(0.99);*/
+/*}*/
+
+.element:hover .element__trash{
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 600px) {
+  .element {
+    min-height: 300px;
+  }
 }
