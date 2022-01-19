@@ -1,0 +1,17 @@
+.element__cover {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2C2F;
+    opacity: 0;
+    z-index: 2;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.element__cover:hover {
+    opacity: 0.1;
+}
