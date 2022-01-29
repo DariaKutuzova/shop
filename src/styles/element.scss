@@ -1,0 +1,115 @@
+%animation {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.element {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 1;
+  @extend %animation;
+  border-radius: 4px;
+
+  &:hover .element__trash {
+    opacity: 1;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: 300px;
+  }
+
+  .element__cover {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2C2F;
+    opacity: 0;
+    z-index: 2;
+    @extend %animation;
+    border-radius: 4px;
+
+    &:hover {
+      opacity: 0.1;
+    }
+  }
+
+  .element__image {
+    height: 200px;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+  }
+
+  .element__caption {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 4px 4px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    .element__header {
+      margin: 16px 0;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      max-width: 300px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
+      @media screen and (max-width: 600px) {
+          font-size: 14px;
+          line-height: 18px;
+      }
+    }
+    .element__description {
+      margin: 0;
+      font-size: 16px;
+      line-height: 20px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    .element__price {
+      margin: 32px 0 24px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 30px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 22px 0 14px;
+      }
+    }
+  }
+}
+.element__trash {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 32px;
+  height: 32px;
+  background: center / 16px 16px url(../images/delete.svg) no-repeat,
+  #FF8484;
+  background-size: 16px 16px, auto, 16px;
+  align-self: center;
+  border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  opacity: 0;
+  @extend %animation;
+  z-index: 10;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
