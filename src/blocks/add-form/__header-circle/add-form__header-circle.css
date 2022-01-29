@@ -1,9 +1,0 @@
-.add-form__header-circle {
-    display: inline-block;
-    height: 4px;
-    width: 4px;
-    background: #FF8484;
-    transition: background 0s 0.3s;
-    border-radius: 4px;
-    vertical-align: top;
-}
